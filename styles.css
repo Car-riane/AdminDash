@@ -1,0 +1,30 @@
+.container {
+  display: grid;
+  height: 100vh;
+
+  grid-template: 15% 85% / 20% 80%;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: navy;
+  color: white;
+
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  padding: 20px;
+  gap: 40px;
+}
+
+.header {
+  grid-area: header;
+  background-color: lightgray;
+}
+
+.main-content {
+  grid-area: main;
+  background-color: lightcoral;
+}
