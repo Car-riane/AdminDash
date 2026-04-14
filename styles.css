@@ -1,8 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
   display: grid;
   height: 100vh;
 
-  grid-template: 15% 85% / 20% 80%;
+  grid-template: 25% 75% / 20% 80%;
   grid-template-areas:
     "sidebar header"
     "sidebar main";
@@ -21,10 +27,92 @@
 
 .header {
   grid-area: header;
-  background-color: lightgray;
+  background-color: white;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  padding: 16px 32px;
+  gap: 20px;
 }
 
+.header-top-left,
+.header-top-right,
+.header-bottom-left,
+.header-bottom-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-top-left {
+  gap: 14px;
+}
+
+.header-top-right {
+  justify-self: end;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.header-bottom-left {
+  gap: 16px;
+}
+
+.header-bottom-right {
+  justify-self: end;
+  gap: 20px;
+}
+
+.header input {
+  width: 100%;
+  max-width: 550px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 999px;
+  background-color: #e2e8f0;
+}
+
+.header button {
+  border: none;
+  border-radius: 999px;
+  padding: 10px 24px;
+  background-color: #1992d4;
+  color: white;
+  font-weight: bold;
+}
+
+.greeting p,
+.greeting h2 {
+  margin: 0;
+}
+
+.greeting p {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.greeting h2 {
+  font-size: 1.4rem;
+}
+
+.big-avatar {
+  font-size: 2.5rem;
+}
+
+.user-name {
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
 .main-content {
   grid-area: main;
   background-color: lightcoral;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
