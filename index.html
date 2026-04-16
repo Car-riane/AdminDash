@@ -12,24 +12,73 @@
   <div class="container">
     <div class="sidebar">
       <div class="sidebar-top">
-        <div class="logo">Dashboard</div>
+        <div class="logo">
+          <img src="./icons/view-dashboard.svg" alt="" class="sidebar-icon logo-icon">
+          <span>Dashboard</span>
+        </div>
       </div>
 
       <ul class="sidebar-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Messages</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Tasks</a></li>
-        <li><a href="#">Communities</a></li>
+        <li>
+          <a href="#">
+            <img src="./icons/home.svg" alt="" class="sidebar-icon">
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./icons/card-account-details-outline.svg" alt="" class="sidebar-icon">
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./icons/message-reply.svg" alt="" class="sidebar-icon">
+            <span>Messages</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./icons/clock-time-three.svg" alt="" class="sidebar-icon">
+            <span>History</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./icons/file-multiple.svg" alt="" class="sidebar-icon">
+            <span>Tasks</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./icons/account-group.svg" alt="" class="sidebar-icon">
+            <span>Communities</span>
+          </a>
+        </li>
       </ul>
 
       <ul class="sidebar-bottom">
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Privacy</a></li>
+        <li>
+          <a href="#">
+            <img src="./icons/cog.svg" alt="" class="sidebar-icon">
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./icons/help-box.svg" alt="" class="sidebar-icon">
+            <span>Support</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./icons/shield-check.svg" alt="" class="sidebar-icon">
+            <span>Privacy</span>
+          </a>
+        </li>
       </ul>
     </div>
+
     <div class="header">
       <div class="header-top-left">
         <span>🔍</span>
@@ -56,28 +105,139 @@
         <button>Share</button>
       </div>
     </div>
+
     <div class="main-content">
       <div class="projects-section">
         <h3>Your Projects</h3>
         <div class="projects-grid">
-          <div class="card">Project 1</div>
-          <div class="card">Project 2</div>
-          <div class="card">Project 3</div>
-          <div class="card">Project 4</div>
-          <div class="card">Project 5</div>
-          <div class="card">Project 6</div>
+          <div class="card">
+            <div>
+              <h4>Budget Tracker App</h4>
+              <p>
+                A simple web app that helps users track daily expenses, set monthly budgets,
+                and visualize spending habits with charts.
+              </p>
+            </div>
+            <div class="card-icons">⭐ 👁️ 🔗</div>
+          </div>
+
+          <div class="card">
+            <div>
+              <h4>Recipe Finder</h4>
+              <p>
+                Search for recipes based on ingredients you already have. Built with an API
+                to fetch real-time recipe suggestions and instructions.
+              </p>
+            </div>
+            <div class="card-icons">⭐ 👁️ 🔗</div>
+          </div>
+
+          <div class="card">
+            <div>
+              <h4>Task Manager</h4>
+              <p>
+                A productivity tool that allows users to create, edit, and organize tasks
+                with deadlines and priority levels.
+              </p>
+            </div>
+            <div class="card-icons">⭐ 👁️ 🔗</div>
+          </div>
+
+          <div class="card">
+            <div>
+              <h4>Weather Dashboard</h4>
+              <p>
+                Displays current weather and forecasts for any city using a weather API,
+                with clean UI and responsive design.
+              </p>
+            </div>
+            <div class="card-icons">⭐ 👁️ 🔗</div>
+          </div>
+
+          <div class="card">
+            <div>
+              <h4>Portfolio Website</h4>
+              <p>
+                A personal portfolio showcasing projects, skills, and contact information,
+                designed with modern UI and responsive layouts.
+              </p>
+            </div>
+            <div class="card-icons">⭐ 👁️ 🔗</div>
+          </div>
+
+          <div class="card">
+            <div>
+              <h4>Chat Application</h4>
+              <p>
+                A real-time messaging app with user authentication and live updates,
+                allowing seamless communication between users.
+              </p>
+            </div>
+            <div class="card-icons">⭐ 👁️ 🔗</div>
+          </div>
         </div>
       </div>
 
       <div class="side-panels">
         <div class="announcements">
           <h3>Announcements</h3>
-          <div class="panel-card">Announcement News</div>
+          <div class="panel-card">
+            <div class="announcement">
+              <h5>Site Maintenance</h5>
+              <p>Scheduled downtime this Saturday from 2am–4am for system updates.</p>
+            </div>
+
+            <hr>
+
+            <div class="announcement">
+              <h5>New Feature Release</h5>
+              <p>We’ve added dark mode and improved dashboard performance.</p>
+            </div>
+
+            <hr>
+
+            <div class="announcement">
+              <h5>Community Event</h5>
+              <p>Join our live Q&A session this Friday to connect with other users.</p>
+            </div>
+          </div>
         </div>
 
         <div class="trending">
           <h3>Trending</h3>
-          <div class="panel-card">Trending Topics</div>
+          <div class="panel-card">
+            <div class="trending-user">
+              <span>🐱</span>
+              <div>
+                <p>@morgan</p>
+                <p>Budget Tracker App</p>
+              </div>
+            </div>
+
+            <div class="trending-user">
+              <span>🐶</span>
+              <div>
+                <p>@alex</p>
+                <p>Recipe Finder</p>
+              </div>
+            </div>
+
+            <div class="trending-user">
+              <span>🐼</span>
+              <div>
+                <p>@jordan</p>
+                <p>Task Manager</p>
+              </div>
+            </div>
+
+            <div class="trending-user">
+              <span>🦊</span>
+              <div>
+                <p>@taylor</p>
+                <p>Weather Dashboard</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
