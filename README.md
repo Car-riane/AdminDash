@@ -12,7 +12,7 @@ A modern, responsive admin dashboard built using HTML, CSS Grid, and Flexbox. Th
 
 ## 📸 Screenshot
 
-![Admin Dashboard Screenshot](./Screenshot%202026-04-15%20223218.png)
+![Admin Dashboard Screenshot](./icons/Screenshot%202026-04-15%20223218.png)
 
 > If the image doesn’t show, make sure the screenshot file is in your repo root or update the path.
 
